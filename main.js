@@ -6,9 +6,6 @@
  * @param {string} inputNumber number that is being converted
  * @param {number} inputNumberSystem numerical system that the inputNumber is being converted from
  * @param {number} outputNumberSystem numerical system that the inputNumber is being converted into
- * @param {number} binNumber binary number we are converting into
- * @param {number} decNumber number from we are converting
- * @param {number} remainder zbytek po deleni
  * @returns {string} containing number converted to output system
  */
 export function main(inputNumber, inputNumberSystem, outputNumberSystem) {
@@ -24,7 +21,7 @@ if (decNumber < 0) { //kontrola, zda je číslo kladné
     return "";
 }
 
-if (decNumber === 0) return "0"; // pokud je se rovná číslo v desítkové soustavě 0, tak je i ve dvojkové soustavě nula
+if (decNumber === 0) return "0"; // pokud je se rovná číslo v desítkové soustavě 0, tak je i ve dvojkové soustavě nula a vrátí se tedy rovnou "0"
 
 let binNumber = "";
 for (let number = decNumber; number > 0; number = (number - (number % 2)) / 2) {
