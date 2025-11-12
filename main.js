@@ -14,7 +14,7 @@ export function main(inputNumber, inputNumberSystem, outputNumberSystem) {
     return "";
 }
 
-let decNumber = inputNumber; 
+let decNumber = Number(inputNumber); 
 
 if (decNumber < 0) { //kontrola, zda je číslo kladné
     console.log("Číslo musí být kladné");
